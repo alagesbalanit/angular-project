@@ -1,0 +1,27 @@
+<h2>Sign Up</h2>
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+    <small *ngIf="submitted && f['name']?.errors">Name is required</small>
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+    <small *ngIf="submitted && f['email']?.errors">Valid email is required</small>
+  </div>
+
+  <div>
+    <label>Password</label>
+    <input type="password" formControlName="password" />
+    <small *ngIf="submitted && f['password']?.errors">
+      Minimum 6 characters required
+    </small>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+

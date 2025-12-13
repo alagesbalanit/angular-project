@@ -1,0 +1,23 @@
+.app-footer {
+  background-color: #f4f4f4;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  /* Add styles here to push it to the bottom of the page if necessary */
+  /* e.g., position: absolute; bottom: 0; width: 100%; might need global styles adjustment */
+}
+
+.footer-content p {
+  margin: 0 0 10px 0;
+}
+
+.footer-content a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
